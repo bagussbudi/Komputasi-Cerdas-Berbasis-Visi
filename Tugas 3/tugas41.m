@@ -1,0 +1,17 @@
+A=imread('untag.jpg');
+set(gcf,'Position',get(0,'Screensize'));
+B=A+50;
+C=A+100;
+D=A+150;
+E=rgb2gray(A);
+F=rgb2gray(B);
+G=rgb2gray(C);
+H=rgb2gray(D);
+subplot(4,2,1);imshow(A);title('Citra Asli');
+subplot(4,2,2);imhist(E);title('Histogram Citra Asli');
+subplot(4,2,3);imshow(B);title('Brigtness +50');
+subplot(4,2,4);imhist(F);title('Histogram Brigtness +50');
+subplot(4,2,5);imshow(C);title('Brigtness +100');
+subplot(4,2,6);imhist(G);title('Histogram Brigtness +100');
+subplot(4,2,7);imshow(D);title('Brigtness +150');
+subplot(4,2,8);imhist(G);title('Histogram Brigtness +50');
